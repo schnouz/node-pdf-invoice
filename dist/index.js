@@ -50,7 +50,7 @@ function PDFInvoice({
         .fillColor('#333333');
 
       doc
-        .strokeColor('#cccccc')
+        .strokeColor('#aab7c3')
         .moveTo(CONTENT_LEFT_PADDING, borderOffset)
         .lineTo(divMaxWidth, borderOffset);
     },
@@ -116,7 +116,8 @@ function PDFInvoice({
       doc
         .moveTo(table.x, table.y + offset)
         .lineTo(divMaxWidth, table.y + offset)
-        .stroke();
+        .stroke()
+        .strokeColor('#aab7c3');
     },
 
     generate(){
