@@ -43,7 +43,7 @@ function PDFInvoice({
 
       doc
         .fontSize(16)
-        .fillColor('#cccccc')
+        .fillColor('#8998a9')
         .text(moment().format('DD MMMM YYYY'), CONTENT_LEFT_PADDING, 50, {
           align: 'right',
         })
@@ -74,7 +74,7 @@ function PDFInvoice({
         .fontSize(TEXT_SIZE)
         .text(translate.chargeFor, CONTENT_LEFT_PADDING, 400);
 
-      doc.text(`${customer.name} <${customer.email}>`);
+      doc.text(`${customer.name} <${customer.email}>`).fillColor('#4c4e72');
     },
 
     genTableHeaders(){
@@ -86,6 +86,7 @@ function PDFInvoice({
       ].forEach((text, i) => {
         doc
           .fontSize(TEXT_SIZE)
+          .fillColor('#4c4e72')
           .text(translate[text], table.x + i * table.inc, table.y);
       });
     },
@@ -104,6 +105,7 @@ function PDFInvoice({
           ].forEach((field, i) => {
             doc
               .fontSize(TEXT_SIZE)
+              .fillColor('#4c4e72')
               .text(item[field], table.x + i * table.inc, table.y + TEXT_SIZE + 6 + itemIndex * 20);
           });
         })
