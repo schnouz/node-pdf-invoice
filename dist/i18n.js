@@ -1,5 +1,6 @@
 'use strict';
 
+
 module.exports = {
   en_US: {},
   pt_BR: {
@@ -9,6 +10,15 @@ module.exports = {
     chargeFor: 'Cobrança para: ',
     description: 'Descrição',
     name: 'Nome',
-    quantity: 'Quantidade'
-  }
-};
+    quantity: 'Quantidade',
+  },
+  fr: {
+    createdAt: 'Crée le',
+    amount: 'Total',
+    chargeStatus: 'Demande de paiement',
+    chargeFor: 'Cobrança para: ',
+    description: 'Description',
+    name: 'Nom',
+    quantity: 'Quantité',
+  },
+}
