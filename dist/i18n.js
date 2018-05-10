@@ -16,7 +16,7 @@ module.exports = {
     createdAt: 'Crée le',
     amount: 'Total',
     chargeStatus: 'Demande de paiement',
-    chargeFor: 'Cobrança para: ',
+    chargeFor: 'Payé par: ',
     description: 'Description',
     name: 'Nom',
     quantity: 'Quantité',
