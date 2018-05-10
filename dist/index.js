@@ -44,7 +44,7 @@ function PDFInvoice({
       doc
         .fontSize(16)
         .fillColor('#cccccc')
-        .text(moment().format('MMMM, DD, YYYY'), CONTENT_LEFT_PADDING, 50, {
+        .text(moment().format('DD MMMM YYYY'), CONTENT_LEFT_PADDING, 50, {
           align: 'right',
         })
         .fillColor('#333333');
@@ -93,7 +93,7 @@ function PDFInvoice({
     genTableRow(){
       items
         .map(item => Object.assign({}, item, {
-          amount: numeral(item.amount).format('$ 0,00.00')
+          amount: numeral(item.amount).format('€ 0,00.00')
         }))
         .forEach((item, itemIndex) => {
           [
